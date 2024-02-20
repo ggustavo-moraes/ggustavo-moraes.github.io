@@ -1,0 +1,78 @@
+.footer {
+  background: #000;
+  max-width: 1130px;
+  padding: 49px 153px 70px;
+  margin: auto;
+  position: relative;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  position: relative;
+  align-items: center;
+}
+
+.footer-descricao {
+  color: 1.5rem;
+  font-family: fira sans;
+  line-height: 1.33;
+  color: #fff;
+  margin-left: 200px;
+}
+
+.footer-contato {
+  margin-left: 150px;
+  position: relative;
+  padding: 0px 20px;
+}
+
+.footer-contato a {
+  color: #fff;
+}
+
+.logo-rodape {
+  position: absolute;
+  margin: 0px;
+  top: 115px;
+  left: 515px;
+}
+
+.footer-container::before {
+  content: "";
+  width: 760px;
+  height: 1px;
+  position: absolute;
+  background: #d9d9d9;
+  top: 100px;
+  left: 170px;
+}
+
+.footer-contato li::before {
+  display: block;
+  content: "";
+  width: 24px;
+  height: 24px;
+  position: absolute;
+}
+
+.email::before {
+  background: url("/arquivos/email.svg") no-repeat center center;
+  position: absolute;
+  left: -30px;
+}
+
+.fone::before {
+  content: "";
+  background: url("/arquivos/fone.svg") no-repeat center center;
+  position: absolute;
+  top: 30px;
+  left: -30px;
+}
+
+.insta::before {
+  background: url("/arquivos/insta.svg") no-repeat center center;
+  top: 60px;
+  left: -30px;
+}

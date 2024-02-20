@@ -1,0 +1,85 @@
+.introducao {
+  background: #363a31;
+  max-width: 1130px;
+  padding: 49px 153px 70px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 4fr 8fr;
+  gap: 93px;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  background-image: url("../arquivos/decoraçao.svg");
+  background-repeat: no-repeat;
+  background-size: 866px 845px;
+  background-position: bottom right;
+}
+
+.introducao::before {
+  content: "";
+  width: 300px;
+  height: 4px;
+  display: inline-block;
+  background: #54544e;
+  position: absolute;
+  bottom: 40px;
+  left: 153px;
+}
+
+.perfil {
+  width: 300px;
+  height: 373px;
+}
+
+.introducao h1 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  position: relative;
+  font-size: 4rem;
+  line-height: 1.125;
+  margin-bottom: 30px;
+}
+
+.introducao h1::before {
+  content: "";
+  display: block;
+  width: 23px;
+  height: 6px;
+  position: absolute;
+  background: url("../arquivos/detalhe\ intro.svg");
+  background-position: center;
+  left: -30px;
+  top: 55px;
+}
+
+.introducao p {
+  font-size: 1.5rem;
+  color: #838483;
+}
+
+@media (max-width: 1000px) {
+  .introducao h1 {
+    font-size: 3rem;
+
+  }
+}
+
+@media (max-width: 800px) {
+  .introducao {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+    .introducao h1 {
+      font-size: 2rem;
+    }
+  } 
+  
+  @media (max-width: 400px) {
+    .introducao {
+      grid-template-columns: 1fr;
+    }
+    .introducao img {
+      display: none;
+    }
+  }
+  
